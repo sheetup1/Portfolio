@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+
+        * {
+            font-family: "Poppins", 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(90deg,
+                    #070A52,
+                    #009FBD,
+                    #210062);
+            margin: 92px 92px 48px 92px;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            background: linear-gradient(135deg,
+            #C3F8FF,
+            #5BC0F8);
+            max-width: fit-content;
+            border-radius: 10px;
+        }
+
+        .header {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: -3px 6px 7px -4px rgba(0, 0, 0, 0.7);
+            -webkit-box-shadow: -3px 6px 7px -4px rgba(0, 0, 0, 0.7);
+            -moz-box-shadow: -3px 6px 7px -4px rgba(0, 0, 0, 0.7);
+            padding: 7.5px 25px 10px 25px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .right div {
+            background-color: #7286d3;
+            margin-left: 10px;
+            padding: 0 10px 0 10px;
+            border-radius: 10px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            margin: 0 30px 0 30px;
+            padding-top: 25px;
+            border-radius: 10px;
+            padding-bottom: 30px;
+        }
+
+        .col2 {
+            margin-left: 50px;
+            animation: col2 2s ease;
+        }
+
+        .col2 h4 {
+            margin-top: -15px;
+        }
+
+        .col2 p,
+        .col2 ul {
+            font-size: 13px;
+            text-align: justify;
+        }
+
+        .col1 {
+            margin-left: 25px;
+            animation: col1 2s ease;
+        }
+
+        .right a button {
+            background: linear-gradient(145deg,
+                    #27E1C1,
+                    #0EA293);
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+
+        }
+
+        .right a button:hover {
+            color: #ffffff;
+            cursor: pointer;
+            background: linear-gradient(145deg,
+                    #0EA293,
+                    #27E1C1);
+        }
+
+        .col1 img.picture {
+            width: 200px;
+        }
+
+        .left img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .col1 img.certificate {
+            width: 300px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 1000px) {
+
+            .col1 img.picture,
+            .col1 img.certificate {
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .info {
+                display: flex;
+                align-items: normal;
+            }
+
+            .col1 {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 600px){
+            .col2 *{
+                font-size: 14px;
+            }
+
+            .header *{
+                font-size: 11px;
+            }
+
+            .col1{
+                padding-right: 0;
+                display: flex;
+                margin-left: 10px;
+                margin-right: 10px;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+
+            .col2 h4{
+                margin-top: 5px;
+            }
+
+            .info{
+                display: grid;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .col1 .picture{
+                margin: 0;
+            }
+
+            .col2{
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 750px){
+            body{
+                margin: 46px 46px 48px 46px;
+            }
+        }
+
+        @media (min-height: 700px){
+            body{
+                overflow: hidden;
+            }
+        }
+
+        @media (max-height: 600px){
+            body{
+                margin: 11.5px 46px 48px 46px;
+            }
+        }
+
+        @keyframes col1 {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            50%{
+                opacity: 75%;
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes col2 {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            50%{
+                opacity: 75%;
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <img src="1680316669484-modified.png" alt="My Cartoon Picture">
+                <span>Francis James O. Omnos</span>
+            </div>
+            <div class="right">
+                <a href="index.html"><button>Back</button></a>
+            </div>
+        </div>
+        <div class="info">
+            <div class="col1">
+                <img src="1680316669484-modified.png" alt="My Cartoon Picture" class="picture">
+                <img src="Certificate.png" alt="My Certificate" class="certificate">
+            </div>
+            <div class="col2">
+                <h3>Hi There! I'm Francis James O. Omnos</h3>
+                <h4>Good at Web Designing</h4>
+                <p>Glad to see you here in my portfolio. Let me introduce myself before you can explore. I'm Francis
+                    James Omnos, good at web design. I'm 19. I live in Purok Atis, Palinpinon, Valencia. I like to code other websites in a similar way when I dont have anything to
+                    do, such as code for Google search in a similar way. I am still learning JavaScript and I'm having a
+                    hard time understanding because Java and JavaScript are different. If I wanted to choose my favorite
+                    programming language, I would choose HTML because it's easy to understand and fun to code.
+                </p>
+                <p>My hobbies in my life are:</p>
+                <ul>
+                    <li>Playing Instruments</li>
+                    <li>Household Chores</li>
+                    <li>Sport Activities</li>
+                </ul>
+                <p>I will be happy when you apply for me and I would love to be with you and other colleagues. And thank
+                    you so much for being here, looking at my portfolio. It's okay if I'm not that guy to be with you. I
+                    hope you will have a better person someday. </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+
+        * {
+            font-family: "Poppins", 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(90deg,
+                    #070A52,
+                    #009FBD,
+                    #210062);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 92px 92px 48px 92px;
+        }
+
+        .container {
+            background: linear-gradient(135deg,
+                    #C3F8FF,
+                    #5BC0F8);
+            border-radius: 10px;
+        }
+
+        .header {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: -3px 6px 7px -4px rgba(0, 0, 0, 0.7);
+            -webkit-box-shadow: -3px 6px 7px -4px rgba(0, 0, 0, 0.7);
+            -moz-box-shadow: -3px 6px 7px -4px rgba(0, 0, 0, 0.7);
+            padding: 7.5px 25px 10px 25px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .right div {
+            background-color: #7286d3;
+            margin-left: 10px;
+            padding: 0 10px 0 10px;
+            border-radius: 10px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info {
+            margin: 0 30px 0 30px;
+            align-items: center;
+            padding-top: 25px;
+            border-radius: 10px;
+            padding-bottom: 130px;
+            animation: transition 2s ease;
+        }
+
+        .right a button {
+            background: linear-gradient(145deg,
+                    #27E1C1,
+                    #0EA293);
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        .right a button:hover {
+            cursor: pointer;
+            background: linear-gradient(145deg,
+                    #0EA293,
+                    #27E1C1);
+        }
+
+        .info p {
+            text-align: justify;
+        }
+
+        .info h2 {
+            text-align: center;
+        }
+
+        strong {
+            text-decoration: underline;
+        }
+
+        li div {
+            display: flex;
+            align-items: center;
+        }
+
+        li a svg {
+            width: 48px;
+            fill: rgb(56, 88, 152);
+            transition: fill 1s ease;
+        }
+
+        li a svg:hover {
+            fill: rgb(35, 68, 132);
+        }
+
+        .left img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 600px) {
+            .header * {
+                font-size: 11px;
+            }
+
+            .info h2 {
+                font-size: 16px;
+            }
+
+            li strong {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 750px) {
+            body {
+                margin: 46px 46px 48px 46px;
+            }
+        }
+
+        @media (min-height: 700px) {
+            body {
+                overflow: hidden;
+            }
+        }
+
+        @media (max-height: 600px) {
+            body {
+                margin: 11.5px 46px 48px 46px;
+            }
+        }
+
+        @keyframes transition {
+            0% {
+                transform: translateY(100%);
+                opacity: 0%;
+            }
+
+            100% {
+                transform: translateY(0%);
+                opacity: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <img src="1680316669484-modified.png" alt="My Cartoon Picture">
+                <span>Francis James O. Omnos</span>
+            </div>
+            <div class="right">
+                <a href="index.html">
+                    <button>Back</button>
+                </a>
+            </div>
+        </div>
+        <div class="info">
+            <h2>You can contact me through:</h2>
+            <ol>
+                <li>
+                    <div>
+                        My Facebook Page:
+                        <a href="https://www.facebook.com/profile.php?id=100009164420790">
+                            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li>My Phone Number: <strong>0926 267 6414</strong></li>
+                <li>My Email: <strong>francisjamesomnos92@gmail.com</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

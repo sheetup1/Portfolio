@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.00, maximum-scale=1.00">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+
+        * {
+            font-family: "Poppins", 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(90deg,
+                    #070A52,
+                    #009FBD,
+                    #210062);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 92px 92px 92px 92px;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            background: linear-gradient(135deg,
+                    #C3F8FF,
+                    #5BC0F8);
+            border-radius: 10px;
+        }
+
+        .header {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: -3px 6px 7px -4px rgba(0, 0, 0, 0.7);
+            -webkit-box-shadow: -3px 6px 7px -4px rgba(0, 0, 0, 0.7);
+            -moz-box-shadow: -3px 6px 7px -4px rgba(0, 0, 0, 0.7);
+            padding: 7.5px 25px 10px 25px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info {
+            margin: 0 30px 0 30px;
+            align-items: center;
+            padding-top: 25px;
+            border-radius: 10px;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            justify-items: center;
+            padding-bottom: 100px;
+        }
+
+        .right a button {
+            background: linear-gradient(145deg,
+                    #27E1C1,
+                    #0EA293);
+            border-radius: 10px;
+            border: none;
+            color: white;
+            margin-left: 10px;
+            padding: 5px 10px;
+            transition: background 0.5s ease;
+        }
+
+        .right a button:hover {
+            color: #ffffff;
+            cursor: pointer;
+            background: linear-gradient(145deg,
+                    #0EA293,
+                    #27E1C1);
+        }
+
+        .info img {
+            width: 200px;
+            animation: picture 2s ease;
+        }
+
+        .left img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .call {
+            padding: 15px 40px;
+            background-color: transparent;
+            border: 2px solid #577D86;
+            border-radius: 25px;
+            font-size: 16px;
+            background: linear-gradient(45deg, #B9F3FC, #9DF1DF);
+            margin-top: 10px;
+            transition: background 1s ease;
+            animation: button 2s ease-in-out;
+        }
+
+        .call:hover {
+            background: linear-gradient(45deg, #9DF1DF, #B9F3FC);
+            border-color: #0081C9;
+            cursor: pointer;
+        }
+
+        .info h1,
+        .info p{
+            animation: text 2s ease;
+        }
+
+        @media (max-width: 900px) {
+            .info {
+                padding-bottom: 100px;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .info {
+                padding-bottom: 75px;
+            }
+
+            body {
+                margin: 46px 46px 48px 46px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header * {
+                font-size: 11px;
+            }
+
+            .info img {
+                width: 100px;
+            }
+
+            .info * {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-height: 700px) {
+            body {
+                overflow: hidden;
+            }
+        }
+
+        @media (max-height: 600px) {
+            body {
+                margin: 11.5px 46px 48px 46px;
+            }
+        }
+
+        @keyframes picture {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            50%{
+                opacity: 75%;
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes text {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            50%{
+                opacity: 75%;
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes button{
+            0%{
+                transform: rotate(0deg);
+                opacity: 0%;
+            }
+
+            100%{
+                transform: rotate(360deg);
+                opacity: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <img src="1680316669484-modified.png" alt="My Cartoon Picture">
+                <span>Francis James O. Omnos</span>
+            </div>
+            <div class="right">
+                <a href="contacts.html">
+                    <button>Contacts</button>
+                </a>
+                <a href="about.html"><button>About</button></a>
+            </div>
+        </div>
+        <div class="info">
+            <img src="1680316669484-modified.png" alt="My Cartoon Picture">
+            <h1>Welcome to my Portfolio</h1>
+            <p>Here, you can explore my portfolio which contain information about me. You can navigate the pages on the
+                top right of this container.</p>
+            <a href="contacts.html">
+                <button class="call">Hire Me</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
